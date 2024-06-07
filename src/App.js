@@ -7,12 +7,14 @@ import ViewAll from './components/ViewAll';
 
 function App() {
   return (
-    <div>
-      <AddBook/>
-      <SearchBook/>
-      <DeleteBook/>
-      <ViewAll/>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<AddBook/>}/>
+      <Route path='/search' element={<SearchBook/>}/>
+      <Route path='/delete' element={<DeleteBook/>}/>
+      <Route path='/view' element={<ViewAll/>}/>
+    </Routes>
+    </BrowserRouter>
   );
 }
 
