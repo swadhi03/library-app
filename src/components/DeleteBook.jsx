@@ -4,8 +4,8 @@ import Navbar from './Navbar'
 const DeleteBook = () => {
   return (
     <div>
-        <Navbar/>
         <div className="container">
+        <Navbar/>
             <div className="row">
                 <div className="col col-12 col-sm-12 col-md-12 col-lg col-xl-12 col-xxl-12">
                     <div className="row g-3">
